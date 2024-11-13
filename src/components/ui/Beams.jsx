@@ -1,7 +1,7 @@
 import { cn } from "../../lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useRef, useState, useEffect } from "react";
-
+// import {Logo1} from '../../images/logo.jpg';
 export const BackgroundBeamsWithCollision = ({
   children,
   className
@@ -66,10 +66,19 @@ export const BackgroundBeamsWithCollision = ({
     (<div
       ref={parentRef}
       className={cn(
-        "h-96 md:h-[40rem] bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
+        "rounded-lg h-96 md:h-[45rem] bg-[url('../../images/logo.jpg')] bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
         // h-screen if you want bigger
-        className
-      )}>
+        
+      )}
+      style={{
+        backgroundImage: "url('../../images/logo.jpg')", // Replace with your image path
+        backgroundSize: "cover",       // Ensure the image covers the entire container
+        backgroundPosition: "center",  // Center the background image
+        backgroundRepeat: "no-repeat",
+        backgroundBlendMode: "overlay", // Blend image with overlay color
+        backgroundColor: "rgba(255, 255, 255, 0.85)", // Semi-transparent white overlay
+      }}
+      >
       {beams.map((beam) => (
         <CollisionMechanism
           key={beam.initialX + "beam-idx"}
@@ -80,7 +89,7 @@ export const BackgroundBeamsWithCollision = ({
       {children}
       <div
         ref={containerRef}
-        className="absolute bottom-0 bg-neutral-100 w-full inset-x-0 pointer-events-none"
+        className="rounded-lg opacity-40 absolute bottom-0 bg-neutral-100 w-full inset-x-0 pointer-events-none"
         style={{
           boxShadow:
             "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset",
