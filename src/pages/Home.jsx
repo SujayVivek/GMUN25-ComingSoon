@@ -6,7 +6,8 @@ export function Home() {
   return (
     <div opacity-50>
     (<BackgroundBeamsWithCollision>
-        <div className="absolute top-10 left-10 z-100">
+      <div className="PIPI">
+        <div className="BUTT absolute top-10 left-10 z-100">
         <button
         className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             <a href="https://gmun.cqiitkgp.com">
@@ -23,13 +24,12 @@ export function Home() {
         <br />
 
         <div
-          className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
+          className="HIIHII relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
           <div
             className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
             <span className=""></span>
           </div>
-          <div> <img className="w-40 h-auto mx-auto mt-6" src="src\images\c6.png" alt="LGO" />
-          </div>
+          <div className="divIMAGE"> </div>
           <div
             className="relative bg-clip-text text-transparent bg-no-repeat bg-violet-400 to-pink-500 py-4">
             <span className="">Coming Soon.....</span>
@@ -37,6 +37,7 @@ export function Home() {
           
         </div>
       </h2>
+      </div>
     </BackgroundBeamsWithCollision>)
     <Query/>
     </div>

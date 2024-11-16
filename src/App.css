@@ -52,3 +52,37 @@ body{
   background-position: center;
   /* background: pink; */
 }
+
+.divIMAGE {
+  background-image: url('/c6.png'); /* Path to your image */
+  background-size: cover;         /* Adjusts image size to cover the entire div */
+  background-repeat: no-repeat;   /* Prevents the image from repeating */
+  background-position: center;
+  
+  /* transform: translateX(7rem);    Centers the image within the div */
+  width: 300px;                   /* Set the desired width of the div */
+  height: 300px;                  /* Set the desired height of the div */
+}
+.center-container {
+  display: flex;                  /* Enable flexbox */
+  justify-content: center;        /* Center horizontally */
+  align-items: center;            /* Center vertically */
+  height: 100vh;                  /* Make the parent take full viewport height */
+}
+.HIIHII{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+    .PIPI{
+      display: flex;
+      transform: scale(0.7);
+      align-items: center;
+    
+    }
+    .BUTT{
+      position: absolute;
+      top: -5rem;
+    }
+  }
